@@ -1,3 +1,5 @@
+import DebugView from './ui/DebugView'
+
 export default function App() {
   return (
     <main className="home">
@@ -7,6 +9,7 @@ export default function App() {
         Ferramenta lúdica e de apoio. Não é um dispositivo médico e não
         substitui o acompanhamento profissional.
       </p>
+      <DebugView />
     </main>
   )
 }

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# MediaPipe WASM (copiado por scripts/copy-mediapipe.mjs)
+public/mediapipe
