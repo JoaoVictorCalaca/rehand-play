@@ -4,24 +4,28 @@ Jogo de reabilitação motora das mãos, controlado por webcam, rodando 100% no 
 
 > Ferramenta lúdica e de apoio. Não é um dispositivo médico e não substitui acompanhamento profissional.
 
-## Minijogos
+## O jogo: Guardião do Piquenique
 
-| Exercício real            | Minijogo    | Gesto              | Fase         |
-| ------------------------- | ----------- | ------------------ | ------------ |
-| Precisão e coordenação    | Vaga-lumes  | Ponta do indicador | MVP          |
-| Flexão/extensão dos dedos | Flor        | Mão aberta ↔ punho | MVP          |
-| Oposição do polegar       | Pérolas     | Pinça              | 5            |
-| Alcance e amplitude       | Constelação | Trajetória do dedo | 5            |
-| Ritmo e sequência         | Tambor      | Dedo a dedo        | 5 (opcional) |
+Um jogo só, com profundidade. Insetos avançam em direção a um bolo de piquenique; o jogador os elimina com as mãos.
+
+| Ação no jogo              | Gesto                                | Exercício real                    |
+| ------------------------- | ------------------------------------ | --------------------------------- |
+| Tapa nos insetos          | Mão aberta passando rápido por cima  | Extensão dos dedos e amplitude    |
+| Poupar a joaninha (amiga) | Controlar o movimento                | Precisão e controle               |
+| Pegar moeda               | Mão aberta sobre ela e depois fechar | Flexão dos dedos (gesto de pegar) |
+
+Regras: ondas infinitas, mosquito (1 tapa), besouro (2 tapas), chefão a cada 5 ondas, joaninha amiga (custa uma vida), combo com multiplicador até ×3, 5 moedas recuperam 1 vida. Fim de jogo quando as vidas acabam.
+
+Ideias para a Fase 5: Ritmo de dedos (uma pista por dedo) como segundo modo.
 
 ## Fases
 
-- [ ] **0. Fundação (~1 dia):** Vite + React + TS, lint, Prettier, Vitest, estrutura de pastas, deploy na Vercel. _Pronto:_ URL pública abre.
-- [ ] **1. Visão computacional (~2–3 dias):** MediaPipe, `useHandTracking`, `InputSource`, suavização (One Euro), gestos, tela de debug.
-- [ ] **2. Primeiros minijogos (~3–4 dias):** motor (rAF + Canvas), Vaga-lumes e Flor, menu, calibração, HUD, fallback de mouse.
+- [x] **0. Fundação (~1 dia):** Vite + React + TS, lint, Prettier, Vitest, estrutura de pastas, deploy na Vercel. _Pronto:_ URL pública abre.
+- [x] **1. Visão computacional (~2–3 dias):** MediaPipe, `useInputSource`, `InputSource`, suavização (One Euro), gestos, tela de debug. Testado no celular.
+- [x] **2. O jogo (~3–4 dias):** motor (rAF + Canvas), Guardião do Piquenique (tapas, moedas, ondas, combo, chefão), menu, calibração, HUD, resultado, fallback de mouse. Falta validar com a câmera real.
 - [ ] **3. Evolução (~2 dias):** métricas por sessão, histórico em localStorage, dificuldade adaptativa, relatório PDF.
 - [ ] **4. Qualidade e performance (~3 dias):** painel FPS/latência, Web Worker (medir antes/depois), Playwright, GitHub Actions.
-- [ ] **5. Mais jogos e polimento (~3–4 dias):** Pérolas, Constelação, duas mãos, acessibilidade, PT/EN, PWA.
+- [ ] **5. Polimento (~3–4 dias):** mão dominante e duas mãos, sons, acessibilidade, PT/EN, PWA, modo extra (Ritmo de dedos).
 - [ ] **6. Apresentação (~2 dias):** README com GIF e benchmark, case study, vídeo, post de lançamento.
 
 ## Arquitetura

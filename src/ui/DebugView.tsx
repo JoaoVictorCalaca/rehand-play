@@ -60,7 +60,7 @@ export default function DebugView() {
   }
   const startMouse = () => {
     if (!stageRef.current) return
-    void start(new MouseInputSource(stageRef.current))
+    void start(new MouseInputSource(() => stageRef.current))
   }
 
   const busy = status === 'loading'

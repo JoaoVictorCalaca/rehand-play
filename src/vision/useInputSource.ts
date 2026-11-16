@@ -40,7 +40,7 @@ export function useInputSource({
   }, [])
 
   const start = useCallback(
-    async (source: InputSource) => {
+    async (source: InputSource): Promise<boolean> => {
       stop()
       setError(null)
       setStatus('loading')
@@ -54,7 +54,9 @@ export function useInputSource({
           }
         })
         await source.start()
-        if (sourceRef.current === source) setStatus('running')
+        if (sourceRef.current !== source) return false
+        setStatus('running')
+        return true
       } catch (e) {
         source.stop()
         if (sourceRef.current === source) {
@@ -62,6 +64,7 @@ export function useInputSource({
           setError(describeError(e))
           setStatus('error')
         }
+        return false
       }
     },
     [stop, stateIntervalMs],
