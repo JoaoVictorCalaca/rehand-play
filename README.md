@@ -4,7 +4,11 @@ Minijogos de reabilitação motora das mãos, controlados pela webcam (ou pelo m
 
 > Ferramenta lúdica e de apoio. Não é um dispositivo médico e não substitui o acompanhamento de um profissional de saúde.
 
-**Status:** Fase 0 (fundação). Veja o [PLANO.md](PLANO.md).
+**Status:** Fase 2 (jogo jogável). Veja o [PLANO.md](PLANO.md).
+
+## O jogo: Guardião do Piquenique
+
+Insetos avançam em direção a um bolo. Com a mão aberta, dê **tapas rápidos** para eliminá-los (extensão dos dedos e amplitude), **poupe as joaninhas** e, quando surgir uma **moeda**, aproxime a mão aberta e **feche-a** para pegar (flexão dos dedos). Dá para jogar com a câmera ou com o mouse.
 
 ## Stack
 
